@@ -2,27 +2,31 @@ export interface Product {
   id: number;
   name: string;
   price: number;
+  inStock: boolean;
   description: string;
 }
 
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'Fancy candle',
+    price: 90,
+    inStock: true,
+    description: 'A fancy candle, for fancy people.'
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    name: 'New Candle',
+    price: 30,
+    inStock: false,
+    description: 'A new candle, because who doesn\'t love new?'
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
+    name: 'Old Candle',
+    price: 20,
+    inStock: false,
+    description: 'An old candle, because the oldies are the besties!'
   }
 ];
 

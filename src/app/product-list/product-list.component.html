@@ -4,6 +4,9 @@
   <h3><a [title]="product.name + 'details'">
     {{ product.name }}
     </a>
+    <p>
+      Price: {{ product.price }}
+    </p>
     <p *ngIf="product.description">
       Description: {{ product.description }}
     </p>
